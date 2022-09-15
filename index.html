@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Expenses chart component</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+        <link rel="stylesheet" href="main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@100;300;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="main-box">
+            <div class="title-box">
+                <div class="title">
+                    <div class="title-detail">My balance</div>
+                    <div class="title-value">$921.48</div>
+                </div>
+                <div class="logo">
+                    <svg
+                        width="72"
+                        height="48"
+                        viewBox="0 0 72 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g fill="none" fill-rule="evenodd">
+                            <circle fill="#382314" cx="48" cy="24" r="24" />
+                            <circle
+                                stroke="#FFF"
+                                stroke-width="2"
+                                cx="24"
+                                cy="24"
+                                r="23"
+                            />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-title">Spending - Last 7 days</div>
+                <div class="content-wrap">
+                    <div class="content-chart">
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="mon-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_mon"
+                                id="mon"
+                            ></div>
+                            <div class="content-chart__item__day">mon</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="tue-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_tue"
+                                id="tue"
+                            ></div>
+                            <div class="content-chart__item__day">tue</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="wed-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_wed"
+                                id="wed"
+                            ></div>
+                            <div class="content-chart__item__day">wed</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="thu-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_thu"
+                                id="thu"
+                            ></div>
+                            <div class="content-chart__item__day">thu</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="fri-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_fri"
+                                id="fri"
+                            ></div>
+                            <div class="content-chart__item__day">fri</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="sat-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_sat"
+                                id="sat"
+                            ></div>
+                            <div class="content-chart__item__day">sat</div>
+                        </div>
+                        <div class="content-chart__item">
+                            <div class="value-hover" id="sun-hover">$17.45</div>
+                            <div
+                                class="content-chart__item__chart height_sun"
+                                id="sun"
+                            ></div>
+                            <div class="content-chart__item__day">sun</div>
+                        </div>
+                    </div>
+                    <hr class="line" />
+                    <div class="content-desc">
+                        <div class="content-desc__value">
+                            <div class="content-desc__value__text">
+                                Total this month
+                            </div>
+                            <div class="content-desc__value__number">
+                                $478.33
+                            </div>
+                        </div>
+                        <div class="content-desc__percent">
+                            <div class="content-desc__percent__number">
+                                +2.4%
+                            </div>
+                            <div class="content-desc__percent__text">
+                                from last month
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+    </body>
+    <script src="main.js"></script>
+</html>
